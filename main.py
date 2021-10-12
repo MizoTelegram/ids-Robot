@@ -33,7 +33,8 @@ if __name__ == "__main__" :
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
         api_hash=Config.API_HASH,
-        plugins=plugins,
+        plugins={"root": "plugins"},
         workers=100
     )
     bot.run()
+
