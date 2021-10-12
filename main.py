@@ -28,7 +28,7 @@ if __name__ == "__main__" :
     plugins = dict(
         root="plugins"
     )
-    Zaute_Km = Client(
+    bot = Client(
         "ZauteKm",
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
@@ -36,4 +36,4 @@ if __name__ == "__main__" :
         plugins=plugins,
         workers=100
     )
-    Zaute_Km.run()
+    bot.run()
